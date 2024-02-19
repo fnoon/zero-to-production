@@ -66,6 +66,8 @@ cargo install --version="~0.7" sqlx-cli --no-default-features --features rustls,
 
 ```bash
 brew install michaeleisel/zld/zld
+brew install llvm
+brew install postgresql@16
 ```
 
 ```
