@@ -1,8 +1,13 @@
 #!/usr/bin/env sh
 
 # For Rust Zero to Production (fnoon branch)
-# Uses homebrew's llvm and postgresql@16.
-#
+# Uses homebrew's llvm, lld, and postgresql@16.
+
+# Note: The upstream repo has a local .cargo/config.toml file which overrides
+# the global config. I had to modify it to get things working on my M2 Macbook.
+# (The preferred linker is no longer a part of the llvm package, but has its own
+# lld package.)
+
 # Usage:
 #   cd ~/src/github/fnoon/zero-to-production
 #   source ./fnoon/env.sh  # this file
